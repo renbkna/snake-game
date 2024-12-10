@@ -1,4 +1,3 @@
-﻿// MainForm.Designer.cs
 namespace SnakeGame
 {
     partial class MainForm
