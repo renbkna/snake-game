@@ -2,6 +2,7 @@
 .vs/
 bin/
 obj/
+.vscode/
 
 # User-specific files
 *.user
