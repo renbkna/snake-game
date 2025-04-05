@@ -5,20 +5,24 @@ This document provides an overview of the snake game codebase to help you unders
 ## Core Files
 
 ### Program.cs
+
 - Entry point for the application
 - Sets up the Windows Forms application and initializes the main form
 
 ### MainForm.cs
+
 - Main game window that hosts the game renderer
 - Handles user input (keyboard controls)
 - Contains the game loop using a Timer
 - Responsible for calling the game engine's update and render methods
 
 ### MainForm.Designer.cs
+
 - Auto-generated code for the form's UI components
 - Contains the setup code for UI elements created in the Windows Forms designer
 
 ### GameEngine.cs
+
 - Core game logic controller
 - Manages game state (menu, playing, paused, game over)
 - Updates game objects (snake, food)
@@ -27,21 +31,25 @@ This document provides an overview of the snake game codebase to help you unders
 - Contains rendering logic for drawing the game and UI
 
 ### SoundManager.cs
+
 - Handles audio playback for game events
 - Loads and plays sound effects for actions like eating food, game over, etc.
 
 ### SettingsForm.cs
+
 - Settings dialog for configuring game options
 - Allows customization of snake color, difficulty, grid visibility, etc.
 
 ## Models Directory
 
 ### GameObject.cs
+
 - Base class for all game objects
 - Defines common properties like position and color
 - Contains a virtual Render method that derived classes override
 
 ### Snake.cs
+
 - Implements the snake character
 - Manages the snake's body segments as a collection
 - Handles movement, growth, and direction changes
@@ -49,16 +57,19 @@ This document provides an overview of the snake game codebase to help you unders
 - Includes rendering logic for the snake segments
 
 ### Food.cs
+
 - Implements the food objects that the snake eats
 - Contains logic for random generation of food
 - Prevents food from spawning on the snake
 - Includes visual effects for the food items
 
 ### Direction.cs
+
 - Enum that defines possible movement directions (Up, Down, Left, Right)
 - Used to track and control the snake's movement
 
 ### GameState.cs
+
 - Enum that defines the different states of the game
 - States include Menu, Playing, Paused, and GameOver
 - Used by the game engine to control game flow
@@ -66,18 +77,22 @@ This document provides an overview of the snake game codebase to help you unders
 ## Project Files
 
 ### SnakeGame.csproj
+
 - Project configuration file for the C# project
 - Defines project settings, dependencies, and build configurations
 
 ## Other Directories
 
 ### Sounds/
+
 - Contains audio files for game sound effects
 
 ### bin/
+
 - Contains compiled binaries generated when the game is built
 
 ### obj/
+
 - Contains intermediate build files
 
 ## Game Flow Overview
